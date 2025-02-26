@@ -57,7 +57,7 @@ def main():
         # Iniciar la transmisión
         if st.session_state.peer_id:
             webrtc_ctx = webrtc_streamer(
-                key="broadcast",
+                key="ver",
                 mode=WebRtcMode.SENDRECV,  # Transmite y recibe
                 rtc_configuration=RTC_CONFIGURATION,
                 media_stream_constraints={"video": True, "audio": True},

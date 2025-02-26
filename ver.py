@@ -39,9 +39,9 @@ def handle_answer(data):
 
 def main():
     st.title("Transmisión en Directo con Streamlit y WebRTC")
-    usuario = st.text_input("Ingrese su Usuario")
-    if usuario != "":
-        st.session_state.user_id = usuario
+    # usuario = st.text_input("Ingrese su Usuario")
+    # if usuario != "":
+        # st.session_state.user_id = usuario
 
     if not st.session_state.user_id:
         connect_to_signaling_server()
